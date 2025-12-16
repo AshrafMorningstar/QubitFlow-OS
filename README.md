@@ -4,6 +4,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/react-19.0.0-61DAFB.svg?style=flat&logo=react&logoColor=black)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAshrafMorningstar%2FQubitFlow-OS)
 ![TypeScript](https://img.shields.io/badge/typescript-5.x-blue.svg?style=flat&logo=typescript)
 
 **Developed by [Ashraf Morningstar](https://github.com/AshrafMorningstar)**
