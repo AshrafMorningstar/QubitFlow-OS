@@ -1,0 +1,102 @@
+<!--
+  @file index.html
+  @author Ashraf Morningstar <https://github.com/AshrafMorningstar>
+  @copyright 2025 Ashraf Morningstar
+  @license MIT
+  🌌 QubitFlow OS - The Quantum Computing Interface
+  "The future is unwritten, but the code is compiled."
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QubitFlow OS ⚛️ | Quantum Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prism.js for Syntax Highlighting -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-rust.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-tsx.min.js"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              "space-grotesk": ['"Space Grotesk"', "sans-serif"],
+              inter: ['"Inter"', "sans-serif"],
+              mono: ['"JetBrains Mono"', "monospace"],
+            },
+            colors: {
+              chronos: {
+                blue: "#0A0C27",
+                dark: "#030014", // Deep space dark
+                space: "#0F102E",
+                light: "#E0E7FF",
+              },
+              neuro: {
+                cyan: "#00F0FF",
+                purple: "#7000FF", // More vibrant purple
+                pink: "#FF0080", // Cyberpunk pink
+                base: "#050505"
+              },
+              quantum: {
+                glow: "#4DEEEA",
+                void: "#000000",
+                glass: "rgba(255, 255, 255, 0.05)"
+              },
+            },
+            boxShadow: {
+              'neon': '0 0 5px theme("colors.neuro.cyan"), 0 0 20px theme("colors.neuro.cyan")',
+              'neon-purple': '0 0 5px theme("colors.neuro.purple"), 0 0 20px theme("colors.neuro.purple")',
+              'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)'
+            },
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glitch': 'glitch 1s linear infinite',
+            },
+            keyframes: {
+              shimmer: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(100%)' }
+              },
+              'slide-up-fade': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' }
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' }
+              },
+              'pulse-glow': {
+                '0%, 100%': { opacity: '1', boxShadow: '0 0 10px #00F0FF' },
+                '50%': { opacity: '.8', boxShadow: '0 0 25px #00F0FF' }
+              }
+            }
+          },
+        },
+      };
+    </script>
+    <!-- <link rel="stylesheet" href="/index.css"> -->
+  </head>
+  <body class="bg-black text-white overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
